@@ -11,3 +11,15 @@ employee2 = Employee("Lauren", 44, "tester", 1000)
 
 print(employee1.name)
 print(employee2.name)
+
+# Terminology
+# We could call employee1 and employee2 objects
+# but everything is object in Python
+# so we call them employee instances
+#
+# Instantiation
+# Is the pocess of using a class
+# to create a new object
+#
+# This code uses the Employee class
+# to instantiate new employee instaces
