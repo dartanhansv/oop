@@ -16,8 +16,11 @@ class Employee:
             f"Employee is a {self.position} with the salary of ${self.salary}"
         )
 
+    def __repr__(self):
+        return f"Employee({self.name}, {self.age}, {self.position}, {self.salary})"
+
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-print(employee1)
+print(repr(employee1))
