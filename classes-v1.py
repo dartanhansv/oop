@@ -22,4 +22,4 @@ print(employee2.name)
 # to create a new object
 #
 # This code uses the Employee class
-# to instantiate new employee instaces
+# to instantiate new employee instances

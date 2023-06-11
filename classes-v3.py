@@ -10,14 +10,20 @@ class Employee:
     def increase_salary(employee, percent):
         employee.salary += employee.salary * (percent/100)
 
-    def info(self):
-        print(f"{self.name} is {self.age} years old. Employee is a \
-    {self.position} with the salary of ${self.salary} ")
+    def __str__(self):
+        return (
+            f"{self.name} is {self.age} years old."
+            f"Employee is a {self.position} with the salary of ${self.salary}"
+        )
+
+    def __repr__(self):
+        return (
+            f"Employee({repr(self.name)}, {repr(self.age)}, "
+            f"{repr(self.position)}, {repr(self.salary)})"
+        )
 
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-employee2.info()
-employee2.increase_salary(20)
-employee2.info()
+print(eval(repr(employee1)))
