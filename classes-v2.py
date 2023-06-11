@@ -11,7 +11,7 @@ class Employee:
         employee.salary += employee.salary * (percent/100)
 
 
-    def employee_info(employee):
+    def info(employee):
         print(f"{employee.name} is {employee.age} years old. Employee is a \
     {employee.position} with the salary of ${employee.salary} ")
 
@@ -20,7 +20,7 @@ class Employee:
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-employee2.employee_info()
+employee2.info()
 employee2.increase_salary(20)
-employee2.employee_info()
+employee2.info()
   
