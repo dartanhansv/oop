@@ -11,9 +11,9 @@ class Employee:
         employee.salary += employee.salary * (percent/100)
 
 
-    def info(employee):
-        print(f"{employee.name} is {employee.age} years old. Employee is a \
-    {employee.position} with the salary of ${employee.salary} ")
+    def info(self):
+        print(f"{self.name} is {self.age} years old. Employee is a \
+    {self.position} with the salary of ${self.salary} ")
 
 
 
