@@ -18,5 +18,6 @@ class Employee:
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-print(employee1.name)
-print(employee2.name)
+Employee.employee_info(employee2)
+Employee.increase_salary(employee2, 20)
+Employee.employee_info(employee2)
