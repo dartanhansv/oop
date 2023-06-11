@@ -21,4 +21,4 @@ class Employee:
 
 
 e = Employee()
-print(e.name)
+print(e.__class__)
