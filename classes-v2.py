@@ -20,7 +20,7 @@ class Employee:
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-Employee.employee_info(employee2)
-Employee.increase_salary(employee2, 20)
-Employee.employee_info(employee2)
+employee2.employee_info()
+employee2.increase_salary(20)
+employee2.employee_info()
   
