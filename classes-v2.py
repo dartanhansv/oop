@@ -5,6 +5,8 @@ class Employee:
         self.position = position
         self.salary = salary
 
+    # Fuction defined within classes = Instance fuctions
+    # or methods
     def increase_salary(employee, percent):
         employee.salary += employee.salary * (percent/100)
 
@@ -21,3 +23,4 @@ employee2 = Employee("Lauren", 44, "tester", 1000)
 Employee.employee_info(employee2)
 Employee.increase_salary(employee2, 20)
 Employee.employee_info(employee2)
+  
