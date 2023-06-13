@@ -20,7 +20,8 @@ class Employee:
             f"{repr(self.position)}, {repr(self.salary)})"
         )
 
-    def get_salary(self):
+    @property
+    def salary(self):
         return self._salary
 
     def set_salary(self, salary):
@@ -33,4 +34,4 @@ employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
 employee1.set_salary(2000)
-print(employee1.get_salary())
+print(employee1.salary)
