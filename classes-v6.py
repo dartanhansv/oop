@@ -31,6 +31,8 @@ class Employee:
     def salary(self, salary):
         if salary < 1000:
             raise ValueError('Minimum wage is $1000')
+        # Fix the not updated annual_salary issue
+        self._annual_salary = None
         self._salary = salary
 
     # @property
@@ -47,6 +49,8 @@ class Employee:
     # if annual_salary is None, calculate
     # if not, if annual_salary was already calculated, return its values
     # But if the salary changed, annual salary wont be recalculated
+    # To fix that, we need to set annual_salary to None everytime
+    # someone updates the salary - line 35
 
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
