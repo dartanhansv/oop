@@ -5,8 +5,6 @@ class Employee:
         self.position = position
         self.salary = salary
 
-    # Fuction defined within classes = Instance fuctions
-    # or methods
     def increase_salary(employee, percent):
         employee.salary += employee.salary * (percent/100)
 
@@ -23,9 +21,6 @@ class Employee:
         )
 
     def get_salary(self):
-        # return f"${self.salary}  # add dolar sign
-        # return round(self.salary, 2)
-        # logging.info("Someone accessed the salaty attribute")
         return self._salary
 
     def set_salary(self, salary):
