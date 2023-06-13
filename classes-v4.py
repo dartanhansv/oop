@@ -21,13 +21,16 @@ class Employee:
             f"Employee({repr(self.name)}, {repr(self.age)}, "
             f"{repr(self.position)}, {repr(self.salary)})"
         )
+    
+    def get_salary(self):
+        return self.salary
+    
+    def set_salary(self, salary):
+        if salary < 1000:
+            raise ValueError('Minimum wage is $1000')
+        self.salary = salary
+
 
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
-
-user_input = int(input("Input salary: "))
-if user_input < 1000:
-    raise ValueError('Minimum wage is $1000')
-else:
-    employee1.salary = user_input
