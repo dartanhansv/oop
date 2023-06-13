@@ -4,6 +4,7 @@ class Employee:
         self.age = age
         self.position = position
         self.salary = salary
+        self.annual_salary = 12 * salary
 
     def increase_salary(self, percent):
         self.salary += self.salary * (percent/100)
@@ -36,4 +37,3 @@ employee2 = Employee("Lauren", 44, "tester", 1000)
 
 employee1.salary = 2000
 print(employee1.salary)
-
