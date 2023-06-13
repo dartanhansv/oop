@@ -46,6 +46,7 @@ class Employee:
         return self._annual_salary
     # if annual_salary is None, calculate
     # if not, if annual_salary was already calculated, return its values
+    # But if the salary changed, annual salary wont be recalculated
 
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
