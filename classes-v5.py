@@ -3,7 +3,7 @@ class Employee:
         self.name = name
         self.age = age
         self.position = position
-        self.set_salary(salary)
+        self.salary = salary
 
     def increase_salary(self, percent):
         self.salary += self.salary * (percent/100)
@@ -24,7 +24,8 @@ class Employee:
     def salary(self):
         return self._salary
 
-    def set_salary(self, salary):
+    @salary.setter
+    def salary(self, salary):
         if salary < 1000:
             raise ValueError('Minimum wage is $1000')
         self._salary = salary
@@ -33,5 +34,7 @@ class Employee:
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
-employee1.set_salary(2000)
+employee1.salary = 2000
 print(employee1.salary)
+# Because of the @property, it call the salary method
+# and retrieve the non-public salary value
