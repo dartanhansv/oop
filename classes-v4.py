@@ -38,4 +38,4 @@ employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
 
 employee1.set_salary(2000)
-print(employee1.get_salary())
+print(employee1.__salary)
