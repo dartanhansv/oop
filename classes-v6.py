@@ -31,6 +31,11 @@ class Employee:
             raise ValueError('Minimum wage is $1000')
         self._salary = salary
 
+    @property
+    def annual_salary(self):
+        return self.salary * 12
+    # computed property: computation with attributes from the same instance
+
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
 employee2 = Employee("Lauren", 44, "tester", 1000)
