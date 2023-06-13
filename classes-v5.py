@@ -5,8 +5,8 @@ class Employee:
         self.position = position
         self.set_salary(salary)
 
-    def increase_salary(employee, percent):
-        employee.salary += employee.salary * (percent/100)
+    def increase_salary(self, percent):
+        self.salary += self.salary * (percent/100)
 
     def __str__(self):
         return (
