@@ -36,5 +36,4 @@ employee2 = Employee("Lauren", 44, "tester", 1000)
 
 employee1.salary = 2000
 print(employee1.salary)
-# Because of the @property, it call the salary method
-# and retrieve the non-public salary value
+
