@@ -26,12 +26,12 @@ class Employee:
         # return f"${self.salary}  # add dolar sign
         # return round(self.salary, 2)
         # logging.info("Someone accessed the salaty attribute")
-        return self.salary
+        return self._salary
 
     def set_salary(self, salary):
         if salary < 1000:
             raise ValueError('Minimum wage is $1000')
-        self.salary = salary
+        self._salary = salary
 
 
 employee1 = Employee("Ji-Soo", 38, "developer", 1200)
