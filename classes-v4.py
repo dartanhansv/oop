@@ -23,6 +23,9 @@ class Employee:
         )
 
     def get_salary(self):
+        # return f"${self.salary}  # add dolar sign
+        # return round(self.salary, 2)
+        # logging.info("Someone accessed the salaty attribute")
         return self.salary
 
     def set_salary(self, salary):
