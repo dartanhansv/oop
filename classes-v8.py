@@ -23,3 +23,16 @@ print(employee1.salary)
 
 # call the subclass method
 employee1.run_tests()
+
+# The Tester subclass has it own method,
+# but it also has access to all the
+# methods from the Employee Class.
+
+# But if the employee1 instance was instantiated from
+# the Employee class, we wouldn't be able to run
+# the run_tests method because inheritance doesn't
+# work the other way around.
+
+# Tester is a subclass of Employee
+# Tester instances can run methods from the Employee class
+# Class intances can not run methods from Tester class
