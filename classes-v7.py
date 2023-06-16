@@ -8,3 +8,7 @@ class Employee:
 
     def increase_salary(self, percent):
         self.salary += self.salary * (percent/100)
+
+
+class Tester(Employee):
+    pass
