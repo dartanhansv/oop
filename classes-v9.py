@@ -28,3 +28,5 @@ employee2 = Developer("Ji-Soo", 38, 1200)
 
 employee1.increase_salary(20)
 employee2.increase_salary(20, 30)
+print(employee1.salary)
+print(employee2.salary)
