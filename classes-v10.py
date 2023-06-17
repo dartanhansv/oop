@@ -55,3 +55,7 @@ print(issubclass(Employee, Tester))
 print(issubclass(Developer, object))
 print(issubclass(Tester, object))
 print(issubclass(Employee, object))
+
+# Developer and Tester are subclasses of Employee
+# Employee is not a subclasses of Tester/Developer
+# All classes are subclasses of class object
