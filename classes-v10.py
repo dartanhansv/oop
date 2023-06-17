@@ -33,6 +33,13 @@ print(employee2.salary)
 
 # Instance returns True if the 1st argument is
 # an instance of the class from the 2nd argument
+
+# employee is a Tester instance and it is also
+# a instance of Employee as Tester is the
+# subclass of Employee
 print(isinstance(employee1, Tester))
-print(isinstance(employee1, Developer))
 print(isinstance(employee1, Employee))
+
+# employee is not an instance of Developer,
+# so it will return False
+print(isinstance(employee1, Developer))
