@@ -43,3 +43,12 @@ print(isinstance(employee1, Employee))
 # employee is not an instance of Developer,
 # so it will return False
 print(isinstance(employee1, Developer))
+print("\n")
+
+print(issubclass(Developer, Employee))
+print(issubclass(Tester, Employee))
+print(issubclass(Employee, Developer))
+print(issubclass(Employee, Tester))
+print(issubclass(Developer, object))
+print(issubclass(Tester, object))
+print(issubclass(Employee, object))
