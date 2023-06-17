@@ -16,6 +16,12 @@ class Tester(Employee):
         print("Tests are done.")
 
 
+class Developer(Employee):
+    def increase_salary(self, percent, bonus=0):
+        self.salary += self.salary * (percent/100)
+        self.salary += bonus
+
+
 employee1 = Tester("Lauren", 44, 1000)
 employee1.increase_salary(20)
 print(employee1.salary)
