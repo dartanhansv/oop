@@ -45,6 +45,9 @@ print(isinstance(employee1, Employee))
 print(isinstance(employee1, Developer))
 print("\n")
 
+# "issubclass" checks for class inheritance
+# issubclass(subclass, master class)
+# True = the 1st arg is a subclass of the 2nd arg
 print(issubclass(Developer, Employee))
 print(issubclass(Tester, Employee))
 print(issubclass(Employee, Developer))
