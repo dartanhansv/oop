@@ -23,6 +23,4 @@ class Developer(Employee):
 
 
 employee1 = Tester("Lauren", 44, 1000)
-employee1.increase_salary(20)
-print(employee1.salary)
-employee1.run_tests()
+employee2 = Developer("Ji-Soo", 38, 1200)
