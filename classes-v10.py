@@ -31,6 +31,8 @@ employee2.increase_salary(20, 30)
 print(employee1.salary)
 print(employee2.salary)
 
+# Instance returns True if the 1st argument is
+# an instance of the class from the 2nd argument
 print(isinstance(employee1, Tester))
 print(isinstance(employee1, Developer))
 print(isinstance(employee1, Employee))
