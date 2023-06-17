@@ -31,16 +31,6 @@ employee2.increase_salary(20, 30)
 print(employee1.salary)
 print(employee2.salary)
 
-
-# Method Overriding
-#
-# Note that both "Empolyee" and "Developer" classes have
-# the "increase_salary" method and the employee2 instance
-# choose to use that method from "Developer" class. But why?
-#
-# The instance will always first look for the method in its
-# own class. If the method is there, it will not got search
-# for it inside of the superclass.
-#
-# The method with the same name will always have
-# proceedings in the subclass.
+print(isinstance(employee1, Tester))
+print(isinstance(employee1, Developer))
+print(isinstance(employee1, Employee))
