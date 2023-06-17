@@ -32,7 +32,7 @@ print(employee1.salary)
 print(employee2.salary)
 
 
-# Methos Overriding
+# Method Overriding
 #
 # Note that both "Empolyee" and "Developer" classes have
 # the "increase_salary" method and the employee2 instance
