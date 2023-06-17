@@ -23,7 +23,7 @@ class Developer(Employee):
 
 
 employee1 = Tester("Lauren", 44, 1000)
-employee2 = Developer("Ji-Soo", 38, 1200)
+employee2 = Developer("Ji-Soo", 38, 1000)
 
 
 employee1.increase_salary(20)
