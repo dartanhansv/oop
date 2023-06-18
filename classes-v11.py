@@ -35,6 +35,9 @@ class Developer(Employee):
         # as intended
         self.salary += bonus
 
+    # This is a "DRY" code
+    " DRY = Don't Repeat yourself"
+
 
 employee1 = Tester("Lauren", 44, 1000)
 employee2 = Developer("Ji-Soo", 38, 1000)
