@@ -28,7 +28,11 @@ class Developer(Employee):
     # So how to access the method from the parent Class?
     # Using the super fuction!
     def increase_salary(self, percent, bonus=0):
-        super().increase_salary(percent)
+        super().increase_salary(percent)  # What happens in the background is:
+        # Employee.increase_salary(self,percent) but it wouldn't like
+        # if the code was like that because self would refer to the
+        # increase_salary of the Developer Class, not from Employee
+        # as intended
         self.salary += bonus
 
 
