@@ -18,8 +18,17 @@ class Tester(Employee):
 
 
 class Developer(Employee):
+    # Define the same method present in the Employee Class
+    # Than repeat the same calculation. This is hard
+    # to mantain.
+    # def increase_salary(self, percent, bonus=0):
+    #     self.salary += self.salary * (percent/100)
+    #     self.salary += bonus
+
+    # So how to access the method from the parent Class?
+    # Using the super fuction!
     def increase_salary(self, percent, bonus=0):
-        self.salary += self.salary * (percent/100)
+        super().increase_salary(percent)
         self.salary += bonus
 
 
