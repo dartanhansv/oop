@@ -1,5 +1,5 @@
 # Implementing Class Inheritance
-
+# Adding New attributes to the Subclass instances"
 
 class Employee:
     def __init__(self, name, age, salary):
