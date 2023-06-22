@@ -27,5 +27,4 @@ class Employee:
 
 
 e = Employee("Ji-Soo", 38, 1000)
-Employee.__dict__["increase_salary"](e, 20)
-print(e.salary)
+print(Employee.minimum_wage)
