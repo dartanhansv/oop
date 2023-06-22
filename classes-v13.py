@@ -25,7 +25,7 @@ class Employee:
 # internal dictionary to manage attribute.
 
 
-#print(Employee.__dict__)
+# print(Employee.__dict__)
 
 
 # Other to prove it that class is an object,
