@@ -1,5 +1,5 @@
-# Implementing Class Inheritance
-# Adding New attributes to the Subclass instances"
+# #6 Accessing Class Attribute and Methods"
+# Classes are Objects too
 
 class Employee:
     def __init__(self, name, age, salary):
