@@ -19,3 +19,10 @@ class Employee:
         if salary < 1000:
             raise ValueError('Minimum wage is $1000')
         self._salary = salary
+
+# if a class itself is an object, that
+# means that it has to have it own
+# internal dictionary to manage attribute.
+
+
+print(Employee.__dict__)
