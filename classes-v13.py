@@ -12,7 +12,7 @@ class Employee:
 
     @property
     def salary(self):
-        return self.salary
+        return self._salary
 
     @salary.setter
     def salary(self, salary):
