@@ -13,3 +13,9 @@ class Employee:
     @property
     def salary(self):
         return self.salary
+
+    @salary.setter
+    def salary(self, salary):
+        if salary < 1000:
+            raise ValueError('Minimum wage is $1000')
+        self._salary = salary
