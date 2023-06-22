@@ -28,3 +28,6 @@ class Employee:
 
 e = Employee("Ji-Soo", 38, 1000)
 print(Employee.minimum_wage)
+
+# Employee instances also have access to the class attributes
+print(e.minimum_wage)
