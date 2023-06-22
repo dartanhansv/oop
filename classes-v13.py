@@ -25,7 +25,13 @@ class Employee:
 # internal dictionary to manage attribute.
 
 
-print(Employee.__dict__)
+#print(Employee.__dict__)
+
+
+# Other to prove it that class is an object,
+# would be to explicitly access the method
+# increase_salary from the internal dictionary:
 
 e = Employee("Ji-Soo", 38, 1000)
 Employee.__dict__["increase_salary"](e, 20)
+print(e.salary)
