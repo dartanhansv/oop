@@ -1,6 +1,8 @@
 # #6 Accessing Class Attribute and Methods"
 # Classes are Objects too
 # Defining Class Methods
+from datetime import date
+
 
 class Employee:
     minimum_wage = 1000
