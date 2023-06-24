@@ -1,6 +1,6 @@
 # #6 Accessing Class Attribute and Methods"
 # Classes are Objects too
-# Defining Class attributes
+# Defining Class Methods
 
 class Employee:
     minimum_wage = 1000
@@ -27,5 +27,3 @@ class Employee:
 e = Employee("Ji-Soo", 38, 1000)
 print(Employee.minimum_wage)
 print(e.minimum_wage)
-
-
