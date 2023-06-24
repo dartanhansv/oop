@@ -5,6 +5,14 @@
 class Employee:
     minimum_wage = 1000
 
+    @classmethod
+    def change_mininum_wage(cls, new_wage):
+        if new_wage > 3000:
+            raise ValueError("Company is bankrupt")
+        cls.minimum_wage = new_wage
+
+
+
     def __init__(self, name, age, salary):
         self.name = name
         self.age = age
