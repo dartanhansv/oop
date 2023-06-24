@@ -18,6 +18,8 @@ class Employee:
         now = date.today()
         age = now.year - dob.year - ((now.month, now.day)
                                      < (dob.month, dob.day))
+        # return a new employee instance with the minimum wage got from
+        # the class's attribute
         return cls(name, age, cls.minimum_wage)
 
     def __init__(self, name, age, salary):
@@ -39,6 +41,9 @@ class Employee:
         self._salary = salary
 
 
-e = Employee("Ji-Soo", 38, 1000)
-print(Employee.minimum_wage)
-print(e.minimum_wage)
+# Use the class function (classmethod) to create
+# a new employe providing only name and date of birth
+e = Employee.new_employee("Ji-Soo", date(1989, 4, 29))
+print(e.name)
+print(e.age)
+print(e.salary)
