@@ -11,8 +11,6 @@ class Employee:
             raise ValueError("Company is bankrupt")
         cls.minimum_wage = new_wage
 
-
-
     def __init__(self, name, age, salary):
         self.name = name
         self.age = age
