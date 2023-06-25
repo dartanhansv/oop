@@ -4,11 +4,12 @@
 from dataclasses import dataclass
 from typing import Any
 
+
 @dataclass
 class Project:
     name: str  # Type hints: it is hinting which type of value is expected
     payment: int
-    client: str
+    client: Any  # To avoind the need of hinting, you can use Any
 
 
 class Employee:
