@@ -10,6 +10,9 @@ class Project:
     payment: int
     client: str
 
+    def notify_client(self):  # define a @dataclass method
+        print(f"Notifying the client about the progress of the {self.name}...")
+
 
 class Employee:
     def __init__(self, name, age, salary, project):
