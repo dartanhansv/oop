@@ -2,14 +2,13 @@
 # 7.3. Implementing Slots and Methods
 
 from dataclasses import dataclass
-from typing import Any
 
 
 @dataclass
 class Project:
     name: str
     payment: int
-    client: Any
+    client: str
 
 
 class Employee:
