@@ -4,7 +4,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(Slots=True)
+@dataclass
 class Project:
     name: str
     payment: int
