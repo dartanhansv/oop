@@ -4,11 +4,11 @@
 from dataclasses import dataclass
 
 
+@dataclass
 class Project:
-    def __init__(self, name, payment, client):
-        self.name = name
-        self.payment = payment
-        self.client = client
+    name: str
+    payment: int
+    client: str
 
     def __str__(self):
         return (
