@@ -8,7 +8,12 @@ class Project:
         self.client = client
 
     def __str__(self):
-        return f"Project(name={repr(self.name)}, payment={repr(self.payment)}, client={repr(self.client)})"
+        return (
+            f"Project(name={repr(self.name)},"
+            f"payment={repr(self.payment)},"
+            f"client={repr(self.client)})"
+        )
+
 
 class Employee:
     def __init__(self, name, age, salary, project):
