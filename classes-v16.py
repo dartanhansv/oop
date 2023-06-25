@@ -4,18 +4,13 @@
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass  
 class Project:
     name: str
     payment: int
     client: str
-
-    def __str__(self):
-        return (
-            f"Project(name={repr(self.name)},"
-            f"payment={repr(self.payment)},"
-            f"client={repr(self.client)})"
-        )
+# Dataclass makes definition of class shorter
+# and already has the repr method within
 
 
 class Employee:
