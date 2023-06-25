@@ -21,3 +21,6 @@ class Employee:
         self.age = age
         self.salary = salary
         self.salary = project
+
+
+p = Project("Django App", 2000, "Globomantics")
