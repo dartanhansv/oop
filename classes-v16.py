@@ -20,8 +20,14 @@ class Employee:
         self.name = name
         self.age = age
         self.salary = salary
-        self.salary = project
+        self.project = project
 
 
 p = Project("Django App", 2000, "Globomantics")
+
+# Create a new Employee instance using
+# the project instance "p" as a parameter:
 e = Employee("Ji-Soo", 38, 1200, p)
+
+# validate
+print(e.project)
