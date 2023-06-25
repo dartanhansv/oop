@@ -4,7 +4,7 @@
 from dataclasses import dataclass
 
 
-@dataclass  
+@dataclass
 class Project:
     name: str
     payment: int
