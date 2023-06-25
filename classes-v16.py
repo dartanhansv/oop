@@ -1,6 +1,9 @@
 # 7.. Using Data Classes
 # 7.1. Introducing Data Classes
 
+from dataclasses import dataclass
+
+
 class Project:
     def __init__(self, name, payment, client):
         self.name = name
@@ -25,6 +28,7 @@ class Employee:
 
 p = Project("Django App", 2000, "Globomantics")
 
+# Composition:
 # Create a new Employee instance using
 # the project instance "p" as a parameter:
 e = Employee("Ji-Soo", 38, 1200, p)
