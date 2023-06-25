@@ -1,6 +1,5 @@
-# #6 Accessing Class Attribute and Methods"
-# Classes are Objects too
-# Defining Class Methods
+# 7.. Using Data Classes
+# 7.1. Introducing Data Classes
 
 class Employee:
     def __init__(self, name, age, salary):
