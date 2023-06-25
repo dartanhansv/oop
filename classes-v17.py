@@ -1,8 +1,8 @@
 # 7.. Using Data Classes
-# 7.1. Introducing Data Classes
+# 7.2. Type hinting of instance attributes
 
 from dataclasses import dataclass
-
+from typing import Any
 
 @dataclass
 class Project:
