@@ -30,6 +30,11 @@ class Employee:
 # "str"; expected "int"  [arg-type]
 # Found 1 error in 1 file (checked 1 source file)
 
-p = Project("Django App", "2000", "Globomantics")
+
+# Resolving the error and rechecking with mypy
+# $ mypy classes-v17.py
+# Success: no issues found in 1 source file
+
+p = Project("Django App", 2000, "Globomantics")
 e = Employee("Ji-Soo", 38, 1200, p)
 print(e.project)
